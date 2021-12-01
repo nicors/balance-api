@@ -5,7 +5,7 @@ class Account {
 
   amount: number;
 
-  constructor({ id, amount }: Account) {
+  constructor({ id, amount = 0 }: Account) {
     this.id = id;
     this.amount = amount;
   }
