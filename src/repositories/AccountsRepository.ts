@@ -63,6 +63,9 @@ class AccountsRepository {
       return false
     }
 
+    if ((account.amount - amount) < -150) {
+      return false;
+    }
     account.amount -= amount;
 
     return account;
